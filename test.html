@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="혁신적인 아이디어로 미래를 선도하는 기업, (주)이노베이션의 공식 웹사이트입니다.">
+    <title>이노베이션 - 미래를 창조하는 기업</title>
+    <!-- 폰트: 현대적이고 깔끔한 Pretendard 사용 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#" class="logo">INNOVATION</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 히어로 섹션 (첫 화면) -->
+        <section id="home" class="hero">
+            <div class="container hero-content">
+                <h1 class="hero-title">미래를 향한 <span class="text-gradient">새로운 도약</span></h1>
+                <p class="hero-subtitle">우리는 기술과 혁신으로 더 나은 내일을 만들어갑니다.</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn btn-primary">서비스 알아보기</a>
+                    <a href="#contact" class="btn btn-secondary">문의하기</a>
+                </div>
+            </div>
+            <!-- 배경 애니메이션 요소 (Blobs) -->
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+        </section>
+
+        <!-- 회사 소개 섹션 -->
+        <section id="about" class="about section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>우리에 대하여</h2>
+                    <p>한계를 뛰어넘는 끊임없는 도전</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text fade-in">
+                        <h3>세상을 바꾸는 작은 아이디어에서<br>시작되었습니다.</h3>
+                        <p>우리는 단순히 제품을 만드는 것을 넘어, 사람들의 삶의 질을 향상시키고 새로운 가치를 창출하는 것에 집중합니다. 수년간 축적된 노하우와 전문성을 바탕으로 업계를
+                            선도하고 있습니다.</p>
+                        <p>고객의 성공이 곧 우리의 성공이라는 믿음으로 항상 최선을 다하겠습니다.</p>
+                    </div>
+                    <!-- 숫자 카운팅 애니메이션 통계 -->
+                    <div class="about-stats fade-in delay-1">
+                        <div class="stat-card">
+                            <h4 class="stat-number" data-target="12">0</h4>
+                            <p>년의 경험</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4 class="stat-number" data-target="1273">0</h4>
+                            <p>성공적인 프로젝트</p>
+                        </div>
+                        <div class="stat-card">
+                            <h4 class="stat-number" data-target="99.8">0</h4>
+                            <p>고객 만족도 (%)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 서비스 섹션 -->
+        <section id="services" class="services section bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>주요 서비스</h2>
+                    <p>비즈니스 성공을 위한 최적의 솔루션</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card fade-in">
+                        <div class="service-icon">💻</div>
+                        <h3>웹 개발</h3>
+                        <p>최신 기술 트렌드를 반영한 반응형, 고성능 웹 애플리케이션을 구축합니다. 사용자 경험 중심의 UI/UX를 제공합니다.</p>
+                    </div>
+                    <div class="service-card fade-in delay-1">
+                        <div class="service-icon">📱</div>
+                        <h3>모바일 앱</h3>
+                        <p>iOS와 Android 환경 모두에서 매끄럽게 동작하는 모바일 앱을 개발하여 비즈니스 접근성을 높입니다.</p>
+                    </div>
+                    <div class="service-card fade-in delay-2">
+                        <div class="service-icon">🧠</div>
+                        <h3>AI 솔루션</h3>
+                        <p>데이터 기반의 인공지능 솔루션을 도입하여 업무 효율을 극대화하고 새로운 인사이트를 도출합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 문의 섹션 -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>프로젝트 문의</h2>
+                    <p>당신의 든든한 비즈니스 파트너가 되어드리겠습니다</p>
+                </div>
+                <div class="contact-box fade-in">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="이름 또는 회사명" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="이메일 주소" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="문의하실 내용을 자유롭게 적어주세요." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">메시지 보내기</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 INNOVATION Co. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">이용약관</a>
+                <a href="#">개인정보처리방침</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
